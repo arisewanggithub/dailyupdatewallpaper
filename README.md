@@ -4,8 +4,9 @@ Public website and privacy policy for Daily Update Wallpaper for Windows
 (Microsoft Store product `9NZVVM6WW02H`). This repository contains only the
 static website, not application source code.
 
-- Temporary website: https://arisewanggithub.github.io/dailyupdatewallpaper/
-- Temporary privacy policy: https://arisewanggithub.github.io/dailyupdatewallpaper/privacypolicy/dailyupdatewallpaper.html
+- Website: https://dailyupdatewallpaper.redrain.ccwu.cc/
+- Privacy policy: https://dailyupdatewallpaper.redrain.ccwu.cc/privacypolicy/dailyupdatewallpaper.html
+- Sitemap: https://dailyupdatewallpaper.redrain.ccwu.cc/sitemap.xml
 - Microsoft Store: https://apps.microsoft.com/detail/9NZVVM6WW02H
 
 GitHub Pages serves the root of `main`. The site uses plain HTML and CSS with
@@ -16,16 +17,19 @@ The replacement policy describes the reviewed wallpaper, local-storage, and
 Microsoft Application Insights diagnostic behavior; it does not claim that the
 app collects no data or promise unverified telemetry retention or opt-out rules.
 
-## Custom domain handoff
+## Custom domain and search discovery
 
-The owner will configure the custom domain and its DNS records. No custom
-domain is configured as part of the initial setup.
+The owner configured `dailyupdatewallpaper.redrain.ccwu.cc` as the GitHub Pages
+custom domain. HTTPS is enforced. Keep `CNAME`, page canonical links, sitemap
+URLs, the robots sitemap declaration, and the repository homepage setting
+consistent if the domain changes.
 
-After the owner finishes domain setup:
+The sitemap lists the homepage and privacy policy. When adding or renaming a
+public page, update the sitemap and its canonical link to the final HTTPS URL.
 
-1. Verify that the homepage and privacy policy load over HTTPS.
-2. Update the website URLs in this README and the repository homepage setting.
-3. Update the privacy policy URL in Microsoft Partner Center to
-   `https://<custom-domain>/privacypolicy/dailyupdatewallpaper.html`.
+Submit `https://dailyupdatewallpaper.redrain.ccwu.cc/sitemap.xml` in Google
+Search Console under the existing `redrain.ccwu.cc` domain property. Submission
+does not guarantee that Google will fetch the sitemap or index its pages.
 
-Do not update Partner Center until the custom-domain privacy URL is verified.
+Use the custom-domain privacy policy URL in Microsoft Partner Center only after
+verifying that it loads successfully over HTTPS.
